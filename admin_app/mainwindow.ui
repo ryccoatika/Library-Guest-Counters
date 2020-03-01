@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1366</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dashboard</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="misc.qrc">
+    <normaloff>:/unsoed.png</normaloff>:/unsoed.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralWidget {
+	background-color:#fcf9f4;
+} </string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>1281</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="daftarAnggota">
+     <property name="styleSheet">
+      <string notr="true">QWidget#daftarAnggota {
+	background-color: #fcf9f4;
+}</string>
+     </property>
+     <widget class="QLabel" name="label1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>921</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label1{
+	font: 20pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #818181;
+}</string>
+      </property>
+      <property name="text">
+       <string>DAFTAR ANGGOTA PERPUSTAKAAN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="indent">
+       <number>-1</number>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="daftarAnggotaTabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>921</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Double Click untuk lihat detail</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget#daftarAnggotaTabel {
+	border: none;
+	color: rgb(129, 129, 129)
+}</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::SelectedClicked</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>360</y>
+        <width>291</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="tambahDataAButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#tambahDataAButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#tambahDataAButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>TAMBAH DATA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="editDataAButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#editDataAButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#editDataAButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>EDIT DATA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="hapusDataAButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#hapusDataAButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#hapusDataAButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>HAPUS DATA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="refreshDataAButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#refreshDataAButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#refreshDataAButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>REFRESH DATA</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>50</y>
+        <width>291</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox#groupBox {
+	font: 14pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #000000;
+	font-weight: 400;
+}</string>
+      </property>
+      <property name="title">
+       <string>Search</string>
+      </property>
+      <widget class="QComboBox" name="searchBy">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox#searchBy {
+	padding-left: 30px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#searchBy:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Dosen/Karyawan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Co Ass</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mahasiswa</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="searchByEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit#searchByEdit {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QLineEdit#searchByEdit:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>30</number>
+       </property>
+       <property name="placeholderText">
+        <string>Cari Berdasarkan Nama</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="searchButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#searchButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#searchButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel#label12 {
+	color: #000000;
+	font: 14pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Nama</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>270</y>
+        <width>311</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exportTableAButton">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>290</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#exportTableAButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#exportTableAButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Export Tabel</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>340</y>
+        <width>311</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="daftarTamu">
+     <property name="styleSheet">
+      <string notr="true">QWidget#setting {
+	background-color: #fcf9f4;
+}</string>
+     </property>
+     <widget class="QTableWidget" name="daftarTamuTabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>921</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Double Click untuk lihat detail</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget#daftarTamuTabel {
+	border: none;
+	color: rgb(129, 129, 129)
+}</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::SelectedClicked</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>921</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label11{
+	font: 20pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #818181;
+}</string>
+      </property>
+      <property name="text">
+       <string>DAFTAR TAMU PERPUSTAKAAN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="indent">
+       <number>-1</number>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>270</y>
+        <width>291</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="hapusDataTButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#hapusDataTButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#hapusDataTButton:hover {
+	background-color:rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>HAPUS DATA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="refreshDataTButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#refreshDataTButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#refreshDataTButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>REFRESH DATA</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>180</y>
+        <width>311</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>250</y>
+        <width>311</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exportTableTButton">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>200</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#exportTableTButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#exportTableTButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Export Tabel</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>40</y>
+        <width>291</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox#groupBox_2 {
+	font: 14pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #000000;
+	font-weight: 400;
+}</string>
+      </property>
+      <property name="title">
+       <string>Search</string>
+      </property>
+      <widget class="QLineEdit" name="searchEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit#searchEdit {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QLineEdit#searchEdit:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>30</number>
+       </property>
+       <property name="placeholderText">
+        <string>Cari Nama atau Instansi</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="searchTTButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#searchTTButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#searchTTButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="daftarPengunjung">
+     <property name="styleSheet">
+      <string notr="true">QWidget#daftarPengunjung {
+	background-color: #fcf9f4;
+}</string>
+     </property>
+     <widget class="QLabel" name="label2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>921</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label2{
+	font: 20pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #818181;
+}</string>
+      </property>
+      <property name="text">
+       <string>DAFTAR PENGUNJUNG</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="daftarPengunjungTabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>921</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget#daftarPengunjungTabel {
+	border: none;
+	color: rgb(129, 129, 129)
+}</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::SelectedClicked</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>350</y>
+        <width>291</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="hapusDataPButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#hapusDataPButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#hapusDataPButton:hover {
+	background-color:rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>HAPUS DATA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statistikPButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#statistikPButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#statistikPButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>CETAK DATA STATISTIK</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="refreshDataPButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#refreshDataPButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#refreshDataPButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>REFRESH DATA</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>40</y>
+        <width>291</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox#groupBox_3 {
+	font: 14pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #000000;
+	font-weight: 400;
+}</string>
+      </property>
+      <property name="title">
+       <string>Search</string>
+      </property>
+      <widget class="QComboBox" name="searchPBy">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox#searchPBy {
+	padding-left: 10px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#searchPBy:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nama</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tanggal Kunjung</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="searchPButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#searchPButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#searchPButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>271</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="nama">
+        <widget class="QLineEdit" name="searchPByEdit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>271</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit#searchPByEdit {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QLineEdit#searchPByEdit:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>30</number>
+         </property>
+         <property name="placeholderText">
+          <string>Cari Berdasarkan Nama</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tglKunjung">
+        <widget class="QDateEdit" name="searchDate">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>271</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QDateEdit#searchDate {
+	padding-left:10px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QDateEdit:hover#searchDate {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::NoButtons</enum>
+         </property>
+         <property name="displayFormat">
+          <string>yyyy-MM-dd</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="jamKunjung"/>
+      </widget>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>260</y>
+        <width>311</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exportTablePButton">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>280</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#exportTablePButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4
+}
+QPushButton#exportTablePButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Export Tabel</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>330</y>
+        <width>311</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="dataStatistik">
+     <property name="styleSheet">
+      <string notr="true">QWidget#dataStatistik {
+	background-color: #fcf9f4;
+}</string>
+     </property>
+     <widget class="QLabel" name="label3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>791</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label3{
+	font: 20pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	color: #818181;
+}</string>
+      </property>
+      <property name="text">
+       <string>DATA STATISTIK</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>761</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3"/>
+     </widget>
+     <widget class="QLabel" name="label4">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>50</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label4 {
+	font: 12pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+}</string>
+      </property>
+      <property name="text">
+       <string>STATISTIK BERDASARKAN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="previewButton">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>330</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#previewButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;	
+	border-right: 1px solid #fcf9f4;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#previewButton:hover {
+	background-color: rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>PREVIEW</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>300</y>
+        <width>331</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="printButton">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>390</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#printButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;	
+	border-right: 1px solid #fcf9f4;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#printButton:hover {
+	background-color: rgba(255, 153, 70,230);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>PRINT</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="dariSampai">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>150</y>
+        <width>331</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#bulanPage {
+	background-color: #fcf9f4;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="bulanPage">
+       <widget class="QComboBox" name="dariBulan">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox#dariBulan {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#dariBulan:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="sampaiBulan">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>90</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox#sampaiBulan {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#sampaiBulan:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="bulanTahun">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox#bulanTahun {
+	padding-left: 30px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#bulanTahun:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>131</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label6 {
+	font: 10pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+}</string>
+        </property>
+        <property name="text">
+         <string>DARI BULAN</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label7">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>70</y>
+          <width>131</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label7 {
+	font: 10pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+}</string>
+        </property>
+        <property name="text">
+         <string>SAMPAI BULAN</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label8 {
+	font: 10pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+}</string>
+        </property>
+        <property name="text">
+         <string>TAHUN</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>90</y>
+          <width>31</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">Line#line_3 {
+	color: #818181;
+}</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>5</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tahunPage">
+       <property name="styleSheet">
+        <string notr="true">QWidget#tahunPage {
+	background-color: #fcf9f4;
+}</string>
+       </property>
+       <widget class="QComboBox" name="dariTahun">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox#dariTahun {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#dariTahun:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="sampaiTahun">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox#sampaiTahun {
+	padding-left: 5px;
+	font: 14pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+	border: 1px solid rgba(255, 153, 70,200);
+	background-color: #ffffff;
+}
+QComboBox#sampaiTahun:hover {
+	border: 1px solid rgb(255, 153, 70);
+}</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label9 {
+	font: 10pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+}</string>
+        </property>
+        <property name="text">
+         <string>DARI TAHUN</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label10 {
+	font: 10pt &quot;Comic Sans MS&quot;;
+	color: #818181;
+}</string>
+        </property>
+        <property name="text">
+         <string>SAMPAI TAHUN</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>80</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="perBulanButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#perBulanButton {
+	background-color:  rgba(255, 153, 70,230);
+	border: none;	
+	border-right: 1px solid #fcf9f4;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#perBulanButton:hover {
+	background-color:  rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>BULAN</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="perTahunButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#perTahunButton {
+	background-color: rgba(255, 153, 70,230);
+	border: none;
+	border-left: 1px solid #fcf9f4;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 40px;
+	font: 13pt &quot;Comic Sans MS&quot;;
+	color: #fcf9f4;
+}
+QPushButton#perTahunButton:hover {
+	background-color:  rgba(255, 153, 70,255);
+	font: 15pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>TAHUN</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>layoutWidget</zorder>
+     <zorder>dariSampai</zorder>
+     <zorder>label3</zorder>
+     <zorder>verticalLayoutWidget</zorder>
+     <zorder>label4</zorder>
+     <zorder>previewButton</zorder>
+     <zorder>line</zorder>
+     <zorder>printButton</zorder>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>921</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="toolBar">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="daftarAnggotaToolButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#daftarAnggotaToolButton {
+	width: 145px;
+	color: #fcf9f4;
+	background-color: rgba(234, 118, 89, 200);
+	border-radius: 5px;
+	padding: 5px;
+	font: 11pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}
+QPushButton#daftarAnggotaToolButton:hover {
+	background-color: rgba(234, 118, 89, 255);
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Daftar Anggota</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="daftarTamuToolButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#daftarTamuToolButton {
+	width: 145px;
+	color: #fcf9f4;
+	background-color: rgba(234, 118, 89, 200);
+	border-radius: 5px;
+	padding: 5px;
+	font: 11pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}
+QPushButton#daftarTamuToolButton:hover {
+	background-color: rgba(234, 118, 89, 255);
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Daftar Tamu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="daftarPengunjungToolButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#daftarPengunjungToolButton {
+	width: 145px;
+	color: #fcf9f4;
+	background-color: rgba(234, 118, 89, 200);
+	border-radius: 5px;
+	padding: 5px;
+	font: 11pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}
+QPushButton#daftarPengunjungToolButton:hover {
+	background-color: rgba(234, 118, 89, 255);
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Daftar Pengunjung</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="dataStatistikToolButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#dataStatistikToolButton {
+	width: 145px;
+	color: #fcf9f4;
+	background-color: rgba(234, 118, 89, 200);
+	border-radius: 5px;
+	padding: 5px;
+	font: 11pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}
+QPushButton#dataStatistikToolButton:hover {
+	background-color: rgba(234, 118, 89, 255);
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Data Statistik</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>76</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>daftarAnggotaToolButton</tabstop>
+  <tabstop>daftarPengunjungToolButton</tabstop>
+  <tabstop>dataStatistikToolButton</tabstop>
+  <tabstop>searchBy</tabstop>
+  <tabstop>searchByEdit</tabstop>
+  <tabstop>searchButton</tabstop>
+  <tabstop>tambahDataAButton</tabstop>
+  <tabstop>editDataAButton</tabstop>
+  <tabstop>hapusDataAButton</tabstop>
+  <tabstop>refreshDataAButton</tabstop>
+  <tabstop>refreshDataPButton</tabstop>
+  <tabstop>perBulanButton</tabstop>
+  <tabstop>perTahunButton</tabstop>
+  <tabstop>previewButton</tabstop>
+  <tabstop>printButton</tabstop>
+  <tabstop>dariTahun</tabstop>
+  <tabstop>sampaiTahun</tabstop>
+  <tabstop>statistikPButton</tabstop>
+  <tabstop>daftarPengunjungTabel</tabstop>
+  <tabstop>daftarTamuTabel</tabstop>
+  <tabstop>hapusDataTButton</tabstop>
+  <tabstop>refreshDataTButton</tabstop>
+  <tabstop>dariBulan</tabstop>
+  <tabstop>sampaiBulan</tabstop>
+  <tabstop>bulanTahun</tabstop>
+  <tabstop>daftarAnggotaTabel</tabstop>
+  <tabstop>hapusDataPButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="misc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

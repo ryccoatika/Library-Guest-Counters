@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>unsoed.png</file>
+        <file>user.jpg</file>
+    </qresource>
+</RCC>
